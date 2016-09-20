@@ -26,11 +26,13 @@
 # Set the default values of all variables.
 #
 # Directory locations: Fixed for any MPI implementation
-prefix=__PREFIX_TO_BE_FILLED_AT_INSTALL_TIME__
-exec_prefix=__EXEC_PREFIX_TO_BE_FILLED_AT_INSTALL_TIME__
-sysconfdir=__SYSCONFDIR_TO_BE_FILLED_AT_INSTALL_TIME__
-includedir=__INCLUDEDIR_TO_BE_FILLED_AT_INSTALL_TIME__
-libdir=__LIBDIR_TO_BE_FILLED_AT_INSTALL_TIME__
+binpath=$(type -P "${0}")
+bindir=${binpath%/*}
+prefix=${bindir}/..
+exec_prefix=${prefix}
+sysconfdir=/etc
+includedir=${prefix}/include
+libdir=${prefix}/lib
 
 # Default settings for compiler, flags, and libraries
 CXX="@CXX@"
