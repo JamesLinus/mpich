@@ -34,6 +34,7 @@ AS_CASE([$host],
 
 
 AM_INIT_AUTOMAKE([-Wall -Wno-portability-recursive -Werror foreign 1.12.3 subdir-objects])
+AM_MAINTAINER_MODE
 
 AM_PROG_AR
 

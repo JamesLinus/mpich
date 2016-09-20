@@ -37,7 +37,7 @@ dnl
 echo "RUNNING CONFIGURE FOR MPI TESTS"
 
 AM_INIT_AUTOMAKE([-Wall -Werror -Wno-portability-recursive foreign 1.12.3 silent-rules subdir-objects])
-AM_MAINTAINER_MODE([enable])
+AM_MAINTAINER_MODE
 
 # Non-verbose make by default
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])

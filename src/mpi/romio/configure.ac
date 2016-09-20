@@ -23,7 +23,7 @@ AC_CONFIG_AUX_DIR([confdb])
 AC_CONFIG_MACRO_DIR([confdb])
 
 AM_INIT_AUTOMAKE([-Wall -Werror -Wno-portability-recursive foreign 1.12.3 silent-rules subdir-objects])
-AM_MAINTAINER_MODE([enable])
+AM_MAINTAINER_MODE
 
 dnl must come before LT_INIT, which AC_REQUIREs AC_PROG_CC
 PAC_PROG_CC
